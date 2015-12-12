@@ -29,7 +29,7 @@
 	<include file="ViewsLandScapeX.xml"/>
 	<!-- 64 -->
 	<include file="ViewsSets.xml"/>
-	<!-- 65 -->	
+	<!-- 65 -->
 	<include file="ViewsPhotoShow.xml"/>
 	<!-- 79 -->
 	<include file="ViewsGames.xml"/>
@@ -108,13 +108,13 @@
 		<onload>Skin.SetString(concertsvideofiles.submenu,on)</onload>
 		<onload>Skin.SetString(concertsvideoroot.submenu,on)</onload>
 		<onload>Skin.SetString(concertscleanlibrary.submenu,on)</onload>
-		<onload>Skin.SetString(concertslibrary.submenu,on)</onload>	
+		<onload>Skin.SetString(concertslibrary.submenu,on)</onload>
 		<onload>Skin.SetString(livetvchannels.submenu,on)</onload>
 		<onload>Skin.SetString(livetvepg.submenu,on)</onload>
 		<onload>Skin.SetString(livetvradiostations.submenu,on)</onload>
 		<onload>Skin.SetString(livetvrecords.submenu,on)</onload>
 		<onload>Skin.SetString(livetvtimers.submenu,on)</onload>
-		<onload>Skin.SetString(livetvsettings.submenu,on)</onload>	
+		<onload>Skin.SetString(livetvsettings.submenu,on)</onload>
 		<onload>Skin.SetString(favouriterefresh.submenu,on)</onload>
 		<onload>Skin.SetString(musicrecentlyplayed.submenu,on)</onload>
 		<onload>Skin.SetString(musicrecently.submenu,on)</onload>
@@ -1092,7 +1092,7 @@
 			<scrollout>false</scrollout>
 			<animation effect="slide" end="0,-28" time="0" tween="sine" easing="out" condition="IsEmpty(Window(2003).Property(AudioLanguage.1))">Conditional</animation>
 		</control>
-	</include>	
+	</include>
 
 	<!-- ######################################################################### Submenu Vertical List ######################################################################### -->
 	<include name="SubmenuVList">
@@ -2021,7 +2021,7 @@
 		<onfocus condition="Container(9000).HasFocus(31) + SubString(skin.string(mfvpl1_list),inprogress)">Skin.SetString(mfvpl1_list,latest)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(31) + SubString(skin.string(mfvpl1_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(vpl1.path)],menu=Menu31)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(31) + SubString(skin.string(mfvpl1_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(vpl1.path)],menu=Menu31)</onfocus>
-		<onfocus condition="Container(9000).HasFocus(31) + SubString(skin.string(mfvpl1_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(vpl1.path)],menu=Menu31)</onfocus>	
+		<onfocus condition="Container(9000).HasFocus(31) + SubString(skin.string(mfvpl1_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(vpl1.path)],menu=Menu31)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(32) + SubString(skin.string(mfvpl2_list),latest)">Skin.SetString(mfvpl2_list,random)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(32) + SubString(skin.string(mfvpl2_list),random)">Skin.SetString(mfvpl2_list,inprogress)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(32) + SubString(skin.string(mfvpl2_list),inprogress)">Skin.SetString(mfvpl2_list,latest)</onfocus>
@@ -2033,19 +2033,19 @@
 		<onfocus condition="Container(9000).HasFocus(33) + SubString(skin.string(mfvpl3_list),inprogress)">Skin.SetString(mfvpl3_list,latest)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(33) + SubString(skin.string(mfvpl3_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(vpl3.path)],menu=Menu33)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(33) + SubString(skin.string(mfvpl3_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(vpl3.path)],menu=Menu33)</onfocus>
-		<onfocus condition="Container(9000).HasFocus(33) + SubString(skin.string(mfvpl3_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(vpl3.path)],menu=Menu33)</onfocus>	
+		<onfocus condition="Container(9000).HasFocus(33) + SubString(skin.string(mfvpl3_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(vpl3.path)],menu=Menu33)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(34) + SubString(skin.string(mfvpl4_list),latest)">Skin.SetString(mfvpl4_list,random)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(34) + SubString(skin.string(mfvpl4_list),random)">Skin.SetString(mfvpl4_list,inprogress)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(34) + SubString(skin.string(mfvpl4_list),inprogress)">Skin.SetString(mfvpl4_list,latest)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(34) + SubString(skin.string(mfvpl4_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(vpl4.path)],menu=Menu34)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(34) + SubString(skin.string(mfvpl4_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(vpl4.path)],menu=Menu34)</onfocus>
-		<onfocus condition="Container(9000).HasFocus(34) + SubString(skin.string(mfvpl4_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(vpl4.path)],menu=Menu34)</onfocus>	
+		<onfocus condition="Container(9000).HasFocus(34) + SubString(skin.string(mfvpl4_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(vpl4.path)],menu=Menu34)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(35) + SubString(skin.string(mfvpl5_list),latest)">Skin.SetString(mfvpl5_list,random)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(35) + SubString(skin.string(mfvpl5_list),random)">Skin.SetString(mfvpl5_list,inprogress)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(35) + SubString(skin.string(mfvpl5_list),inprogress)">Skin.SetString(mfvpl5_list,latest)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(35) + SubString(skin.string(mfvpl5_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(vpl5.path)],menu=Menu35)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(35) + SubString(skin.string(mfvpl5_list),random)">RunScript(script.randomandlastitems,limit=12,resume=True,method=Last,playlist=$INFO[Skin.String(vpl5.path)],menu=Menu35)</onfocus>
-		<onfocus condition="Container(9000).HasFocus(35) + SubString(skin.string(mfvpl5_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(vpl5.path)],menu=Menu35)</onfocus>	
+		<onfocus condition="Container(9000).HasFocus(35) + SubString(skin.string(mfvpl5_list),inprogress)">RunScript(script.randomandlastitems,limit=12,method=Last,playlist=$INFO[Skin.String(vpl5.path)],menu=Menu35)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(41) + SubString(skin.string(mfapl1_list),latest)">Skin.SetString(mfapl1_list,random)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(41) + SubString(skin.string(mfapl1_list),random)">Skin.SetString(mfapl1_list,latest)</onfocus>
 		<onfocus condition="Container(9000).HasFocus(41) + SubString(skin.string(mfapl1_list),latest)">RunScript(script.randomandlastitems,limit=12,method=Random,playlist=$INFO[Skin.String(apl1.path)],menu=Menu41)</onfocus>
@@ -2412,7 +2412,7 @@
 				<font>Font_16</font>
 				<align>right</align>
 				<textcolor>FFFFFAF0</textcolor>
-				<label>$INFO[System.Date][COLOR=80FFFFFF] | [/COLOR]$INFO[System.Time][COLOR=80FFFFFF] | [/COLOR]$INFO[Window(Weather).Property(Current.Condition)][COLOR=80FFFFFF] | [/COLOR][COLOR=$VAR[value_headercolor]]$INFO[Weather.Temperature][/COLOR]</label>
+				<label>$INFO[System.Date][COLOR=80FFFFFF] | [/COLOR]$INFO[System.Time]</label>
 				<scroll>true</scroll>
 				<scrollout>false</scrollout>
 				<animation effect="slide" start="0,0" end="0,-70" time="500" easing="inout" tween="cubic" condition="Container(9000).HasFocus(8)">Conditional</animation>
@@ -2444,11 +2444,11 @@
 				<font>Font_23</font>
 				<align>left</align>
 				<textcolor>E4101010</textcolor>
-				<label>$INFO[System.Time] | $INFO[Weather.Temperature]</label>
+				<label>$INFO[System.Time]</label>
 				<scroll>true</scroll>
 				<scrollout>false</scrollout>
 			</control>
-			<control type="fadelabel">
+			<control type="label">
 				<posx>20</posx>
 				<posy>35</posy>
 				<width>260</width>
@@ -2456,12 +2456,9 @@
 				<font>Font_16</font>
 				<align>left</align>
 				<textcolor>E4101010</textcolor>
-				<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
 				<label>$INFO[System.Date]</label>
-				<pauseatend>3000</pauseatend>
 				<scroll>true</scroll>
 				<scrollout>false</scrollout>
-				<animation effect="slide" start="0,0" end="0,-70" time="500" easing="inout" tween="cubic" condition="Container(9000).HasFocus(8)">Conditional</animation>
 			</control>
 		</control>
 	</include>
@@ -2491,11 +2488,11 @@
 				<font>Font_22</font>
 				<align>left</align>
 				<textcolor>E9101010</textcolor>
-				<label>$INFO[System.Time] | $INFO[Weather.Temperature]</label>
+				<label>$INFO[System.Time]</label>
 				<scroll>true</scroll>
 				<scrollout>false</scrollout>
 			</control>
-			<control type="fadelabel">
+			<control type="label">
 				<posx>30</posx>
 				<posy>695</posy>
 				<width>260</width>
@@ -2503,12 +2500,9 @@
 				<font>Font_16</font>
 				<align>left</align>
 				<textcolor>E9101010</textcolor>
-				<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
 				<label>$INFO[System.Date]</label>
-				<pauseatend>3000</pauseatend>
 				<scroll>true</scroll>
 				<scrollout>false</scrollout>
-				<animation effect="slide" start="0,0" end="0,70" time="500" easing="inout" tween="cubic" condition="Container(9000).HasFocus(8)">Conditional</animation>
 			</control>
 		</control>
 	</include>
@@ -2564,7 +2558,7 @@
 		</control>
 	</include>
 
-	<!-- ######################################################################### Home Vertical RSS ######################################################################### -->  
+	<!-- ######################################################################### Home Vertical RSS ######################################################################### -->
 	<include name="HomeVRSS">
 		<control type="group">
 			<animation effect="slide" start="0,70" end="0,0" time="500" delay="1000" easing="inout" tween="cubic">WindowOpen</animation>
@@ -2615,7 +2609,7 @@
 		</control>
 	</include>
 
-	<!-- ######################################################################### Home Horizontal RSS ######################################################################### -->  
+	<!-- ######################################################################### Home Horizontal RSS ######################################################################### -->
 	<include name="HomeHRSS">
 		<control type="group">
 			<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
@@ -2660,7 +2654,7 @@
 			<animation effect="slide" end="605,430" time="0" condition="Control.IsVisible(56)">Conditional</animation>
 			<animation effect="slide" end="100,330" time="0" condition="Control.IsVisible(57)">Conditional</animation>
 			<animation effect="slide" end="605,450" time="0" condition="Control.IsVisible(58)">Conditional</animation>
-			<animation effect="slide" end="1100,80" time="0" condition="Control.IsVisible(59)">Conditional</animation>	
+			<animation effect="slide" end="1100,80" time="0" condition="Control.IsVisible(59)">Conditional</animation>
 			<animation effect="slide" end="605,550" time="0" condition="Control.IsVisible(60)">Conditional</animation>
 			<animation effect="slide" end="605,550" time="0" condition="Control.IsVisible(61)">Conditional</animation>
 			<animation effect="slide" end="570,550" time="0" condition="Control.IsVisible(63)">Conditional</animation>
@@ -2785,7 +2779,7 @@
 			<label>653</label>
 			<altlabel>13353</altlabel>
 			<usealttexture>library.isscanningvideo</usealttexture>
-		</control>	
+		</control>
 		<control type="radiobutton" id="16">
 			<!-- PartyMode -->
 			<include>TopMenuRadioButton</include>
@@ -2978,7 +2972,7 @@
 				<onclick condition="!Skin.HasSetting(customosd)">ActivateWindow(SubtitleSearch)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + !SubString(skin.string(osd_video_subtitle),disable)">Skin.SetString(osd_video_subtitle,disable)</onclick>
 				<onclick condition="Skin.HasSetting(customosd) + SubString(skin.string(osd_video_subtitle),disable)">Skin.Reset(osd_video_subtitle,disable)</onclick>
-				<visible>[!SubString(skin.string(osd_video_subtitle),disable) | Skin.HasSetting(customosd)] + !VideoPlayer.Content(LiveTV)</visible>	
+				<visible>[!SubString(skin.string(osd_video_subtitle),disable) | Skin.HasSetting(customosd)] + !VideoPlayer.Content(LiveTV)</visible>
 			</item>
 			<item id="5">
 				<!-- audio -->

@@ -1262,7 +1262,7 @@
 					<font>Font_16</font>
 					<align>right</align>
 					<textcolor>FFFFFAF0</textcolor>
-					<label>$INFO[System.Date][COLOR=80FFFFFF] | [/COLOR]$INFO[System.Time][COLOR=80FFFFFF] | [/COLOR]$INFO[Window(Weather).Property(Current.Condition)][COLOR=80FFFFFF] | [/COLOR][COLOR=$VAR[value_headercolor]]$INFO[Weather.Temperature][/COLOR]</label>
+					<label>$INFO[System.Date][COLOR=80FFFFFF] | [/COLOR]$INFO[System.Time]</label>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
 					<animation effect="slide" start="0,0" end="0,-70" time="500" easing="inout" tween="cubic" condition="Container(9000).HasFocus(8)">Conditional</animation>
