@@ -1,0 +1,86 @@
+<window id="1129" type="dialog">
+    <defaultcontrol always="true">4112</defaultcontrol>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <include>Animation_DialogPopup</include>
+            <control type="list" id="4112">
+                <posx>413</posx>
+                <posy>150</posy>
+                <width>454</width>
+                <height>450</height>
+                <onleft>Close</onleft>
+                <onright>Close</onright>
+                <orientation>vertical</orientation>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>300</scrolltime>
+                <focusposition>0</focusposition>
+                <itemlayout height="39" width="454">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>454</width>
+                        <height>39</height>
+                        <texture>dialogs_context_nofocus.png</texture>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <height>39</height>
+                        <width>430</width>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>Font_18</font>
+                        <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+                        <textcolor>FFFFFAF0</textcolor>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="39" width="454">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>454</width>
+                        <height>39</height>
+                        <texture>dialogs_context_focus.png</texture>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <height>39</height>
+                        <width>430</width>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <font>Font_18</font>
+                        <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+                        <textcolor>FF101010</textcolor>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="1">
+                        <label fallback="31012">Quit</label>
+                        <onclick>Quit</onclick>
+                    </item>
+                    <item id="2">
+                        <label fallback="31012">Power Off</label>
+                        <onclick>Powerdown</onclick>
+                        <visible>System.CanPowerDown</visible>
+                    </item>
+                    <item id="3">
+                        <label fallback="31012">Suspend</label>
+                        <onclick>Suspend</onclick>
+                        <visible>System.CanSuspend</visible>
+                    </item>
+                    <item id="4">
+                        <label fallback="31012">Hibernate</label>
+                        <onclick>Hibernate</onclick>
+                        <visible>System.CanHibernate</visible>
+                    </item>
+                </content>
+            </control>
+        </control>
+    </controls>
+</window>

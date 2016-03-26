@@ -19,6 +19,7 @@
 			<onclick condition="SubString(skin.string(shutdownbutton),powerdown)">Powerdown</onclick>
 			<onclick condition="SubString(skin.string(shutdownbutton),suspend)">Suspend</onclick>
 			<onclick condition="SubString(skin.string(shutdownbutton),hibernate)">Hibernate</onclick>
+			<onclick condition="SubString(skin.string(shutdownbutton),ask)">ActivateWindow(1129)</onclick>
 			<visible>SubString(skin.string(shutdown.menu),on) + SubString(skin.string(menu),horizontal)</visible>
 		</item>
 		<item id="1">
@@ -366,6 +367,7 @@
 			<onclick condition="SubString(skin.string(shutdownbutton),powerdown)">Powerdown</onclick>
 			<onclick condition="SubString(skin.string(shutdownbutton),suspend)">Suspend</onclick>
 			<onclick condition="SubString(skin.string(shutdownbutton),hibernate)">Hibernate</onclick>
+			<onclick condition="SubString(skin.string(shutdownbutton),ask)">ActivateWindow(1129)</onclick>
 			<visible>SubString(skin.string(shutdown.menu),on) + SubString(skin.string(menu),vertical)</visible>
 		</item>
 	</include>

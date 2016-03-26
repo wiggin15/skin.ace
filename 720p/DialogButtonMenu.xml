@@ -68,6 +68,7 @@
 						<onclick condition="SubString(skin.string(shutdownbutton),powerdown)">Powerdown</onclick>
 						<onclick condition="SubString(skin.string(shutdownbutton),suspend)">Suspend</onclick>
 						<onclick condition="SubString(skin.string(shutdownbutton),hibernate)">Hibernate</onclick>
+						<onclick condition="SubString(skin.string(shutdownbutton),ask)">ActivateWindow(1129)</onclick>
 					</item>
 					<item id="2">
 						<!-- Settings -->

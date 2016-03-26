@@ -324,6 +324,13 @@
 					<selected>SubString(skin.string(shutdownbutton),hibernate)</selected>
 					<visible>Container(9000).HasFocus(66)</visible>
 				</control>
+				<control type="radiobutton" id="141">
+					<include>CustomMenuRadioButton</include>
+					<label>$LOCALIZE[31023] - Ask</label>
+					<onclick>Skin.SetString(shutdownbutton,ask)</onclick>
+					<selected>SubString(skin.string(shutdownbutton),ask)</selected>
+					<visible>Container(9000).HasFocus(66)</visible>
+				</control>
 				<control type="button" id="143">
 					<!-- Fundo unico -->
 					<include>CustomMenuButton</include>
