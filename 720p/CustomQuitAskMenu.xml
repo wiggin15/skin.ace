@@ -79,6 +79,11 @@
                         <onclick>Hibernate</onclick>
                         <visible>System.CanHibernate</visible>
                     </item>
+                    <item id="5">
+                        <label fallback="31012">Reboot</label>
+                        <onclick>Reset()</onclick>
+                        <visible>System.CanReboot</visible>
+                    </item>
                 </content>
             </control>
         </control>
